@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <!-- EXAMPLE -->
+    <!--
+    <changeSet id="unId" author="joalvarez" runOnChange="true">
+        <sqlFile path="" relativeToChangelogFile="true"/>
+    </changeSet>
+    -->
+
+    <!-- DDL PRODUCTS -->
+    <changeSet id="product_table" author="joalvarez" runOnChange="true">
+        <sqlFile path="ddl/product/01-product.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet id="add_active" author="joalvarez" runOnChange="true">
+        <sqlFile path="ddl/product/02-product_add_active.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+    <!-- DML PRODUCTS -->
+    <changeSet id="default_products" author="joalvarez" runOnChange="true">
+        <sqlFile path="dml/product/01-default-products.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+</databaseChangeLog>

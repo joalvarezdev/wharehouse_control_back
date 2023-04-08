@@ -37,7 +37,7 @@ public class ProductController {
             value = "size",
             paramType = "query",
             dataType = "integer",
-            defaultValue = "${spring.data.web.pageable.default-page-size:100}"
+            defaultValue = "${spring.data.web.pageable.default-page-size:20}"
     )
     })
     public ResponseEntity<Page<ProductDTO>> findAllPageable(
